@@ -1,23 +1,46 @@
+@font-face {
+  font-family: "cenobyte";
+  src: url('../fonts/cenobyte.ttf');
+}
+
 body {
+  background-color: #000;
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #ddd;
+}
+
+h1 {
+  margin: 0.3em;
+  font-family: 'cenobyte', cursive;
+  font-size: 4em;
+  letter-spacing: 4px;
+  color: #911;
+  text-align: center;
+  text-shadow: 2px 2px 8px #611;
+  cursor: default;
 }
 
 .wrapper {
   display: flex;
+  padding: 1em;
 }
 
 .left {
-  background-color: #eee;
+  padding: 0.5em;
+  background-color: #000;
   height: 100vh;
   width: 20%;
 }
 
 .middle {
-  background-color: #ccc;
+  padding: 0.5em;
+  background-color: #111;
   width: 60%;
 }
 
 .right {
-  background-color: #eee;
+  padding: 0.5em;
+  background-color: #000;
   width: 20%;
 }
