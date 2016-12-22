@@ -3,21 +3,27 @@
   src: url('../fonts/cenobyte.ttf');
 }
 
+header {
+  margin: 2em 1em 1em 1em;
+}
+
 body {
   background-color: #000;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   color: #ddd;
+  background-image: url('../imgs/bg_stars.jpg');
+  background-repeat: repeat;
 }
 
 h1 {
-  margin: 0.3em;
+  margin: 0;
   font-family: 'cenobyte', cursive;
   font-size: 4em;
   letter-spacing: 4px;
-  color: #911;
+  color: #eee;
   text-align: center;
-  text-shadow: 2px 2px 8px #611;
+  text-shadow: 2px 2px 8px #000;
   cursor: default;
 }
 
@@ -28,19 +34,18 @@ h1 {
 
 .left {
   padding: 0.5em;
-  background-color: #000;
+  background-color: #444;
   height: 100vh;
   width: 20%;
 }
 
 .middle {
   padding: 0.5em;
-  background-color: #111;
   width: 60%;
 }
 
 .right {
   padding: 0.5em;
-  background-color: #000;
+  background-color: #333;
   width: 20%;
 }
