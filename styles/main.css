@@ -49,3 +49,9 @@ h1 {
   background-color: #333;
   width: 20%;
 }
+
+.player-icon {
+  margin: 0 0 0.5em 0;
+  border: 2px #fff solid;
+  /*border-radius: 50%;*/
+}
