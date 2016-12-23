@@ -9,7 +9,7 @@ $(document).ready(function() {
       this.gameLoop();
     },
     cacheDom: function() {
-      const this.$explore = $('#btn-explore');
+      this.$explore = $('#btn-explore');
     },
     bindEvents: function() {
       this.$explore.on('click', function() {
