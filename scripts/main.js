@@ -2,7 +2,31 @@ const $ = require('jquery');
 
 $(document).ready(function() {
 
-  const player = {
+  const game = {
+    init: function() {
+      cacheDom();
+      bindEvents();
+      gameLoop();
+    },
+    cacheDom: function() {
+      const $explore = $('#btn-explore');
+    },
+    bindEvents: function() {
+      $explore.on('click', function() {
+        // spawn phanton
+      });
+    },
+    gameLoop: function() {
+      console.log('test');
+    },
+  }
+
+  window.setInterval(function() {
+    // displayStats();
+  }, 1000);
+
+  let player = {
+    rank: 1,
     hp: 10,
     maxHp: 10,
     sta: 20,
@@ -11,12 +35,13 @@ $(document).ready(function() {
     maxExp: 100
   }
 
-  function showStats() {
-
+  let phantom = {
+    rank: 1,
+    hp: 10,
+    sta: 20,
+    exp: 2
   }
 
-  window.setInterval(function() {
-    console.log('hi');
-  }, 1000);
+  game.init();
 
 });
