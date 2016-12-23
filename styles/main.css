@@ -19,11 +19,11 @@ body {
 h1 {
   margin: 0;
   font-family: 'cenobyte', cursive;
-  font-size: 4em;
-  letter-spacing: 4px;
-  color: #eee;
+  font-size: 3.75em;
+  letter-spacing: 3px;
+  color: #fff;
   text-align: center;
-  text-shadow: 2px 2px 8px #000;
+  text-shadow: 2px 2px 8px #9aa;
   cursor: default;
 }
 
@@ -42,14 +42,18 @@ h2 {
   min-width: 125px;
   max-width: 225px;
   padding: 1em;
-  background-color: #222;
-  height: 100vh;
+  background-color: #111;
+  /*height: 700px;*/
   width: 20%;
   text-align: center;
+  border: 1px #222 solid;
 }
 
 .middle {
-  background-color: #000;
+  /*background-color: #000;*/
+  background-image: url("../imgs/planet_tuaruta.png");
+  background-repeat: no-repeat;
+  background-position: center top;
   padding: 1em;
   width: 60%;
   text-align: center;
@@ -59,11 +63,13 @@ h2 {
   min-width: 125px;
   max-width: 225px;
   padding: 1em;
-  background-color: #222;
+  background-color: #111;
   width: 20%;
+  border: 1px #222 solid;
 }
 
 .player-icon {
+  height: 125px;
   margin: 0 0 0.5em 0;
   border: 2px #eee solid;
   border-radius: 50%;
@@ -72,13 +78,9 @@ h2 {
 .stats span {
   font-weight: bold;
 }
-.btns{
+
+.btns {
 	background-color:#333;
 	border: none;
 	margin: 2px;
 }
-
-
-
-
-
