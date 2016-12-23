@@ -1,5 +1,15 @@
 const $ = require('jquery');
 
 $(document).ready(function() {
-  console.log('test');
+
+  game = {
+    player: {
+      health: 10,
+      maxHealth: 10
+    },
+    gameLoop: {
+
+    }
+  }
+
 });

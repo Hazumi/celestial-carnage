@@ -27,31 +27,48 @@ h1 {
   cursor: default;
 }
 
+h2 {
+  margin: 0 0 1em 0;
+}
+
 .wrapper {
+  /*max-width: 1200px;*/
   display: flex;
-  padding: 1em;
+  justify-content: center;
+  padding: 0.5em;
 }
 
 .left {
-  padding: 0.5em;
-  background-color: #444;
+  min-width: 125px;
+  max-width: 225px;
+  padding: 1em;
+  background-color: #222;
   height: 100vh;
   width: 20%;
+  text-align: center;
 }
 
 .middle {
-  padding: 0.5em;
+  background-color: #000;
+  padding: 1em;
   width: 60%;
+  text-align: center;
 }
 
 .right {
-  padding: 0.5em;
-  background-color: #333;
+  min-width: 125px;
+  max-width: 225px;
+  padding: 1em;
+  background-color: #222;
   width: 20%;
 }
 
 .player-icon {
   margin: 0 0 0.5em 0;
-  border: 2px #fff solid;
-  /*border-radius: 50%;*/
+  border: 2px #eee solid;
+  border-radius: 50%;
+}
+
+.stats span {
+  font-weight: bold;
 }
