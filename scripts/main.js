@@ -4,15 +4,15 @@ $(document).ready(function() {
 
   const game = {
     init: function() {
-      cacheDom();
-      bindEvents();
-      gameLoop();
+      this.cacheDom();
+      this.bindEvents();
+      this.gameLoop();
     },
     cacheDom: function() {
-      const $explore = $('#btn-explore');
+      const this.$explore = $('#btn-explore');
     },
     bindEvents: function() {
-      $explore.on('click', function() {
+      this.$explore.on('click', function() {
         // spawn phanton
       });
     },
