@@ -50,13 +50,14 @@ h2 {
 }
 
 .middle {
-  /*background-color: #000;*/
   background-image: url("../imgs/planet_tuaruta.png");
   background-repeat: no-repeat;
   background-position: center top;
   padding: 1em;
   width: 60%;
   text-align: center;
+  display: flex;
+  align-items: flex-end;
 }
 
 .right {
