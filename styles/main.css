@@ -1,87 +1,119 @@
-@font-face {
-  font-family: "cenobyte";
-  src: url('../fonts/cenobyte.ttf');
-}
-
-header {
-  margin: 2em 1em 1em 1em;
-}
-
 body {
-  background-color: #000;
+  background-color: #141414;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   color: #ddd;
-  background-image: url('../imgs/bg_stars.jpg');
-  background-repeat: repeat;
 }
 
-h1 {
-  margin: 0;
-  font-family: 'cenobyte', cursive;
-  font-size: 3.75em;
-  letter-spacing: 3px;
+.container-fluid {
+  padding: 0;
+}
+
+#barOne {
+  background-color: #080808;
+}
+
+#barTwo {
+  background-color: #080808;
+  border-bottom: solid #222 2px;
+}
+
+.logo-wrapper {
+  float: left;
+}
+
+#logo {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: right;
+  font-size: 1.6em;
   color: #fff;
-  text-align: center;
-  text-shadow: 2px 2px 8px #9aa;
-  cursor: default;
+}
+
+h1 a {
+  color: #fff;
+}
+
+h1 span {
+  font-weight: bold;
+  /*font-size: 1.5em;*/
 }
 
 h2 {
-  margin: 0 0 1em 0;
-}
 
-.wrapper {
-  /*max-width: 1200px;*/
-  display: flex;
-  justify-content: center;
-  padding: 0.5em;
-}
-
-.left {
-  min-width: 125px;
-  max-width: 225px;
-  padding: 1em;
-  background-color: #111;
-  height: 900px;
-  width: 20%;
-  text-align: center;
-  border: 1px #222 solid;
-}
-
-.middle {
-  background-image: url("../imgs/planet_tuaruta.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding: 1em;
-  width: 60%;
-  text-align: center;
-  display: flex;
-  align-items: flex-end;
-}
-
-.right {
-  min-width: 125px;
-  max-width: 225px;
-  padding: 1em;
-  background-color: #111;
-  width: 20%;
-  border: 1px #222 solid;
-}
-
-.player-icon {
-  height: 125px;
-  margin: 0 0 0.5em 0;
-  border: 2px #eee solid;
-  border-radius: 50%;
-}
-
-.stats span {
+  font-size: 1.3em;
   font-weight: bold;
 }
 
-.btns {
-	background-color:#333;
-	border: none;
-	margin: 2px;
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
 }
+
+.logo-wrapper {
+  margin: 0;
+  padding: 0 1em 0 0;
+  /*background-color: #222;*/
+  /*border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;*/
+  /*border: 1px #222 solid;*/
+  text-align: right;
+}
+
+.stats {
+  padding: 0.25em 0.5em;
+  /*background-color: #222;*/
+  /*border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;*/
+  /*border: 1px #222 solid;*/
+  text-align: right;
+}
+
+.stats div {
+  display: inline;
+  padding: 0 0.5em;
+}
+
+.stats div span {
+  font-weight: bold;
+}
+
+.box .stats {
+  text-align: center;
+  /*background-color: #282828;
+  border-radius: 8px;*/
+}
+
+.main {
+  padding 1em;
+  background-color: #141414;
+}
+
+.menu {
+  /*border-radius: 8px;*/
+  /*padding: 1em;*/
+  /*background-color: #232323;*/
+  /*background-color: #1b1b1b;*/
+  /*color: #eee;*/
+}
+
+.box {
+  /*border-radius: 8px;*/
+  /*text-align: center;*/
+  padding: 0.75em 0;
+  /*background-color: #333;*/
+}
+
+.btn {
+  border-radius: 0;
+}
+
+/*.left {
+  background-color: #111;
+  border: 1px #222 solid;
+}
+
+
+.stats span {
+  font-weight: bold;
+}*/

@@ -3,33 +3,98 @@
   <head>
     <meta charset="utf-8">
     <title>Celestial Carnage</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Piedra" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Open+Sans" rel="stylesheet">
   </head>
   <body>
 
-  <header>
-    <h1>Celestial_Carnage</h1>
-  </header>
+  <header class="container-fluid">
+    <div id="barOne">
+      <div class="logo-wrapper">
+        <h1 id="logo"><a href="index.html">[ <span>c</span><em>ɔ</em> ]</a></h1>
+        <!-- <h1 id="logo"><a href="index.html">[ɔ<span>ɔ</span>]</a></h1> -->
+      </div>
 
-  <div class="wrapper">
-    <div class="left">
       <div class="stats">
-        <h2>Player Name</h2>
-        <img src="imgs/player_icon.svg" alt="" class="player-icon">
-        <div class="stats" id="rank">
-          Rank: <span id="player_rank">1</span>
-         </div>
-        <div class="stats" id="hp">
-          HP: <span id="playerHp">10</span>/<span id="playerMaxHp">10</span>
+        <div id="rank">
+          Intergalactic Rank: <span id="p_rank">0</span>
         </div>
-        <div class="stats" id="sta">
-          STA: <span id="playerSta">10</span>/<span id="playerMaxSta">10</span>
+
+        <div id="sp">
+          SP: <span id="playerExp">0</span>/<span id="playerMaxExp">100</span>
         </div>
-        <div class="stats" id="xp">
-          EXP: <span id="playerExp">0</span>/<span id="playerMaxExp">100</span>
+
+        <div id="quid">
+          QUID: <span id="playerExp">0</span>
         </div>
       </div>
+    </div>
+
+
+    <div id="barTwo">
+      <div class="stats">
+        <div id="hi">
+          Hull Integrity: <span id="hi">10</span>/<span id="playerMaxHp">10</span>
+        </div>
+
+        <div id="sta">
+          Hull Armor: <span id="playerSta">10</span>/<span id="playerMaxSta">10</span>
+        </div>
+
+        <div id="atk">
+          Shields: <span id="playerSta">10</span>/<span id="playerMaxSta">10</span>
+        </div>
+
+        <div id="atk">
+          Power: <span id="playerSta">100</span>/<span id="playerMaxSta">100</span>
+        </div>
+
+        <div id="atk">
+          Nano Energy: <span id="playerSta">100</span>/<span id="playerMaxSta">100</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <div class="main col-sm-9">
+        <div class="box">
+          <!-- <h3>Ship Overview</h3> -->
+        </div>
+      </div>
+
+      <div class="menu col-sm-3">
+        <div class="box">
+          <h3>Travel</h3>
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block">Station</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="laser">Nano Research Lab</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block">Sector 1.8</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block">Sector 1.9</button>
+        </div>
+
+        <div class="box">
+          <h3>Ship</h3>
+          <button type="button" class="btn btn-outline-warning btn-sm btn-block" id="laser">Primary Weapon</button>
+          <button type="button" class="btn btn-outline-warning btn-sm btn-block" id="laser">Nano Weapon</button>
+        </div>
+
+      </div>
+    </section>
+
+
+
+  </div>
+
+
+
+
+  <!-- <div class="wrapper">
+    <div class="left">
+
       <h3>Travel</h3>
       <button class="btn">Docking Station</button>
       <h3>Actions</h3>
@@ -38,18 +103,18 @@
     </div>
     <div class="middle">
       <div class="skill-bar">
-        <button class="skill">Laser</button>
+        <h3>Attack</h3>
+        <button id="laser">Laser</button>
+        <div id="log"></div>
       </div>
     </div>
     <div class="right">
-      <!-- <div class='actionEvents'>
       	<button class='btns' id='attack' type='submit'><img id='attackIcon' src='imgs/ray-gun.png' alt=''></button>
       	<button class='btns' id='heavyWeapon' type='submit'><img id='heavyIcon' src='imgs/tesla-turret.png' alt=''></button>
       	<button class='btns' id='defend' type='submit'><img id='defendIcon' src='imgs/light-sabers.png' alt=''></button>
       	<button class='btns' id='retreat' type='submit'><img id='retreatIcon' src='imgs/rocket-flight.png' alt=''></button>
-      </div> -->
     </div>
-  </div>
+  </div> -->
 
   <script src="scripts/main.min.js"></script>
   </body>
