@@ -1,63 +1,17 @@
-body {
-  background-color: #141414;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  color: #ddd;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-#barOne {
-  background-color: #080808;
-}
-
-#barTwo {
-  background-color: #080808;
-  border-bottom: solid #222 2px;
-}
+@import "partials/normalize";
+@import "partials/utils";
+@import "partials/base";
+@import "partials/layout/header";
+//@import "partials/components/..";
 
 .logo-wrapper {
-  float: left;
-}
-
-#logo {
-  font-family: 'Montserrat Alternates', sans-serif;
-  text-align: right;
-  font-size: 1.6em;
-  color: #fff;
-}
-
-h1 a {
-  color: #fff;
-}
-
-h1 span {
-  font-weight: bold;
-  /*font-size: 1.5em;*/
-}
-
-h2 {
-
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-}
-
-.logo-wrapper {
-  margin: 0;
-  padding: 0 1em 0 0;
+  //margin: 0;
+  //padding: 0 1em 0 0;
   /*background-color: #222;*/
   /*border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;*/
   /*border: 1px #222 solid;*/
-  text-align: right;
+  //text-align: right;
 }
 
 .stats {
@@ -85,7 +39,7 @@ h3 {
 }
 
 .main {
-  padding 1em;
+  padding: 1em;
   background-color: #141414;
 }
 
