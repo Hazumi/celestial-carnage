@@ -1,23 +1,12 @@
-#barOne, #barTwo {
-  background-color: $black;
-}
-
-#barTwo {
-//  border-bottom: solid darken(grey, 35%) 2px;
-//  border-left: solid darken(grey, 35%) 2px;
-//  border-right: solid darken(grey, 35%) 2px;
-}
-
 .logo-wrapper {
   float: left;
 }
+.stats {
+  padding: 0.25em 0.5em;
+  text-align: right;
+}
 
-#logo {
-  font-family: 'Montserrat Alternates', sans-serif;
-  //text-align: right;
-  font-size: 1.6em;
-  color: #fff;
-  span {
-    font-weight: bold;
-  }
+.stats > div {
+  display: inline;
+  padding: 0 0.5em;
 }
