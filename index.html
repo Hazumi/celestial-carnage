@@ -46,7 +46,7 @@
         </div>
 
         <div id="atk">
-          Power: <span id="playerSta">100</span>/<span id="playerMaxSta">100</span>
+          Power: <span id="playerPwr">100</span>/<span id="playerMaxPwr">100</span>
         </div>
 
         <div id="atk">
@@ -55,30 +55,40 @@
       </div>
     </div>
   </header>
-
   <section class="container">
     <div class="row">
       <div class="main col-md-9">
-        <div class="box">
-          <h2>Ship Overview</h2>
+        <div id="station" class="">
+          <h2>Station</h2>
+          <p>Stuff goes here</p>
+        </div>
+
+        <div id="research-lab" class="hidden">
+          <h2>Research Lab</h2>
         </div>
       </div>
 
       <div class="menu col-md-3">
-        <div class="box">
-          <h2>Travel</h2>
-          <button type="button" class="btn btn-outline-secondary btn-sm btn-block">Station</button>
-          <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="laser">Nano Research Lab</button>
-          <button type="button" class="btn btn-outline-secondary btn-sm btn-block">Sector 1.8</button>
-          <button type="button" class="btn btn-outline-secondary btn-sm btn-block">Sector 1.9</button>
+        <div>
+          <h2>Travel (5 Power)</h2>
+
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="stationBtn">Station</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="researchLabBtn">Nano Research Lab</button>
         </div>
 
-        <div class="box">
+        <div>
           <h2>Ship</h2>
-          <button type="button" class="btn btn-outline-warning btn-sm btn-block" id="laser">Primary Weapon</button>
-          <button type="button" class="btn btn-outline-warning btn-sm btn-block" id="laser">Nano Weapon</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm btn-block" id="cargo">Cargo</button>
+          <button type="button" class="btn btn-outline-warning btn-sm btn-block" id="primary-weapon">Primary Weapon</button>
+          <button type="button" class="btn btn-outline-warning btn-sm btn-block" id="nano-weapon">Nano Weapon</button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div id="log">
+      <p>I guess this is the log</p>
     </div>
   </section>
 

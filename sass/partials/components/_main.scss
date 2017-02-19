@@ -1,5 +1,9 @@
-.main {
-  background-color: lighten($black, 5%);
-  border-radius: 2px;
-  border: solid 1px $grey;
+.main, #log {
+  @extend %box-style;
 }
+
+#log {
+  padding: 0.25em;
+  background-color: lighten($black, 15%);
+}
+

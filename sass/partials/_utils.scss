@@ -1,4 +1,5 @@
 /* utilities 
+ * placeholder
   1. =variables
   2. =mixins
   3. =placeholders
@@ -6,16 +7,39 @@
 */
 
 // 1. =variables
-$white: #d8d8d8;
+$white: #eee;
 $grey: #141414;
-$black: #080808;
+$black: #141414;
 $primary-color: $white;
 
 $a: 'a, a:active, a:hover, a:visited';
 $a-hover: 'a:active, a:hover';
 
 // 2. =mixins
+@mixin link-style($color1, $color2) {
+  #{$a} {
+    color: $color1;
+  }
+  #{$a-hover} {
+    color: $color2;
+    text-decoration: none;
+  }
+}
 
 // 3. =placeholders
+%box-style {
+  background-color: lighten($black, 3%);
+  border: solid 2px lighten($black, 7%);
+}
+
+%primary-link-style {
+  @include link-style($white, skyblue);
+}
+
+%secondary-link-style {
+  @include link-style($grey, $white);
+}
 
 // 4. =functions
+
+

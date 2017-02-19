@@ -1,0 +1,5 @@
+.menu {
+  @extend %box-style;
+  border-left: none;
+  border-radius: 0 1em 1em 0;
+}
