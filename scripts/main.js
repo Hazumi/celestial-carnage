@@ -4,11 +4,14 @@ const researchLabBtn = document.getElementById('researchLabBtn');
 const researchLab = document.getElementById('research-lab');
 const playerPwr = document.getElementById('playerPwr');
 const playerMaxPwr = document.getElementById('playerMaxPwr');
+const cargo = document.getElementById('cargo');
 
 let player = {
- pwr: 100,
- maxPwr: 100,
- location: 'station'
+  pwr: 100,
+  maxPwr: 100,
+  location: 'station',
+  tech: {},
+  cargo: {}
 };
 
 function allHidden() {
@@ -35,6 +38,9 @@ researchLabBtn.addEventListener('click', function() {
   researchLab.classList.remove('hidden');
 });
 
+cargo.addEventListener('click', function() {
+  console.log('')
+});
 
 window.setInterval(function() {
   if (playerPwr.innerHTML != player.pwr) playerPwr.innerHTML = player.pwr;

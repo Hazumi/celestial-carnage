@@ -7,3 +7,8 @@
   background-color: lighten($black, 15%);
 }
 
+.research-container{
+  @extend %box-style;
+  background-color: lighten($black, 10%);
+}
+
